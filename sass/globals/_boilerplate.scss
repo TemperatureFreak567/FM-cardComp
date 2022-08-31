@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*, *::after,*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-background);
+  color: var(--main-paragraph);
+  font-family: 'Inter', 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+}

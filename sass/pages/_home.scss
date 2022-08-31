@@ -1,0 +1,85 @@
+main {
+  background-color: var(--card-background);
+  margin: 9rem 2rem;
+  border-radius: 1.5rem;
+  .card {
+      overflow: hidden;
+      border-radius: 1.5rem;
+    }
+  span {
+    color: var(--accent);
+  }
+  .img-div {
+    background: hsl(277, 64%, 61%,);
+    img {
+     width: 100%;
+      display: block;
+      filter: opacity(0.4);
+      
+    }
+
+  }
+  .insights {
+    text-align: center;
+    padding: 1.3rem 2rem;
+    
+  }
+  .metrics {
+    margin-top: 4rem;
+    h2 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+  }
+  @media screen and (min-width: 1440px) {
+    .card {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "insight img"
+    }
+    .img-div {
+      grid-area: img;
+    }
+    .insights {
+      padding: 5rem;
+      grid-area: insight;
+        text-align: left;
+        h1{
+          font-size: 5rem;
+        }
+        #main-paragraph {
+padding: 0 8rem 0 0;
+  font-size: 2.1rem;
+  
+}
+    }
+    .metrics {
+      display: grid;
+      grid-template-areas:
+        "1 2 3"
+        "a b c";
+        
+      .first {
+        grid-area: a;
+      }
+      .second {
+        grid-area: b;
+      }
+      .third {
+        grid-area: c;
+      }
+      margin-top: 7.5rem;
+      h2 {
+        font-size: 3rem;
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+      p {
+        letter-spacing: 0.15rem;
+      }
+    }
+  }
+}
